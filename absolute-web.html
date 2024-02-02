@@ -1,0 +1,99 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- 3 ways -->
+    <!-- External -->
+    <!-- Embedded - internal -->
+    <!-- Inline -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      * {
+        /* box-sizing: content-box; */
+        /* does not inclide padding + border */
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+      }
+
+      .container {
+        margin-top: 200px;
+        position: relative;
+      }
+
+      .text {
+        position: absolute;
+        font-size: 18px;
+      }
+
+      .topright {
+        top: 8px;
+        right: 16px;
+      }
+
+      .topleft {
+        top: 8px;
+        left: 16px;
+      }
+
+      .bottomleft {
+        bottom: 8px;
+        left: 16px;
+      }
+
+      .bottomright {
+        bottom: 8px;
+        right: 16px;
+      }
+
+      .center {
+        /* border: 1px solid red; */
+        /* width: 100%; */
+        /* text-align: center; */
+        top: 48%;
+        left: 48%;
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+        opacity: 0.3;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Semantic HTML -->
+    <!-- <nav></nav> -->
+    <!-- <footer></footer> -->
+    <!-- Float -->
+    <!-- inline -->
+    <!-- inline-block -->
+    <!-- Positions -->
+    <!-- Flexbox -->
+    <!-- Grid -->
+    <!-- z-index -->
+
+    <!-- CSS Layout  - position  property -->
+    <!-- position: static -->
+    <!-- position: relative -->
+    <!-- position: sticky -->
+    <!-- position: fixed -->
+    <!-- position: absolute  works with position: relative-->
+
+    <h2>Adjusting texts on top an image</h2>
+    <div class="container">
+      <img src="img_5terre_wide.jpg" alt="" />
+      <div class="topleft text">Top left</div>
+      <div class="topright text">Top right</div>
+      <div class="bottomleft text">Bottom left</div>
+      <div class="bottomright text">Bottom right</div>
+      <div class="center text">Centered</div>
+    </div>
+  </body>
+</html>

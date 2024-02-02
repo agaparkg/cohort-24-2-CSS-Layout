@@ -1,0 +1,169 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- 3 ways -->
+    <!-- External -->
+    <!-- Embedded - internal -->
+    <!-- Inline -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <style>
+      * {
+        /* box-sizing: content-box; */
+        /* does not inclide padding + border */
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+      }
+
+      header {
+        background-color: lightblue;
+        padding: 20px;
+      }
+
+      nav {
+        background-color: lightgreen;
+        padding: 10px;
+      }
+
+      aside,
+      section,
+      article {
+        float: left;
+        padding: 20px;
+        /* border: 2px solid red; */
+        /* height: 640px; */
+        height: calc(100vh - 154px);
+        /* 100vh -> view height */
+        /* 100vw -> view width */
+        width: calc(100% / 3);
+      }
+
+      aside {
+        /* width: 20%; */
+        /* 33.33% */
+        background-color: lightseagreen;
+        padding-bottom: 2000px;
+      }
+
+      section {
+        /* width: 60%; */
+        background-color: lightpink;
+      }
+
+      article {
+        /* width: 20%; */
+        background-color: lightslategray;
+      }
+
+      footer {
+        background-color: grey;
+        padding: 20px;
+        clear: both;
+      }
+
+      .fixed-card {
+        padding: 15px;
+        width: 160px;
+        cursor: pointer;
+        margin: 0;
+        position: fixed;
+        font-size: 20px;
+        text-align: right;
+        left: -105px;
+        transition: left 0.5s;
+        color: white;
+      }
+
+      .fixed-card:hover {
+        left: 0;
+      }
+
+      .fixed-card i {
+        background-color: white;
+        color: #2563eb;
+        padding: 5px;
+        border-radius: 2px;
+        margin-left: 20px;
+      }
+
+      .fixed-card a {
+        text-decoration: none;
+        color: white;
+      }
+
+      .linkedin {
+        top: 300px;
+      }
+
+      .instagram {
+        top: 360px;
+      }
+
+      .youtube {
+        top: 420px;
+      }
+
+      .email {
+        top: 480px;
+      }
+
+      @media screen and (max-width: 600px) {
+        article,
+        section,
+        aside {
+          width: 100%;
+          height: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Semantic HTML -->
+    <!-- <nav></nav> -->
+    <!-- <footer></footer> -->
+    <!-- Float -->
+    <!-- inline -->
+    <!-- inline-block -->
+    <!-- Positions -->
+    <!-- Flexbox -->
+    <!-- Grid -->
+    <!-- z-index -->
+
+    <!-- CSS Layout  - position  property -->
+    <!-- position: static -->
+    <!-- position: relative -->
+    <!-- position: sticky -->
+    <header>Header</header>
+    <nav>Navbar</nav>
+    <div class="fixed">
+      <div class="fixed-card linkedin" style="background-color: #2563eb">
+        <a href="https://www.linkedin.com" target="_blank">
+          <span>LinkedIn</span>
+          <i class="fa fa-linkedin"></i>
+        </a>
+      </div>
+      <div class="fixed-card instagram" style="background-color: #d6259f">
+        <span>Instagram</span><i class="fa fa-instagram"></i>
+      </div>
+      <div class="fixed-card youtube" style="background-color: #f03d3d">
+        <span>Youtube</span><i class="fa fa-youtube"></i>
+      </div>
+      <div class="fixed-card email" style="background-color: #6fc2b0">
+        <span>Email</span><i class="fa fa-envelope"></i>
+      </div>
+    </div>
+    <main>
+      <aside>Aside</aside>
+      <section>Section</section>
+      <article>Article</article>
+    </main>
+    <footer>Footer</footer>
+  </body>
+</html>

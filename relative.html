@@ -1,0 +1,106 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- 3 ways -->
+    <!-- External -->
+    <!-- Embedded - internal -->
+    <!-- Inline -->
+    <style>
+      * {
+        /* box-sizing: content-box; */
+        /* does not inclide padding + border */
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+      }
+
+      header {
+        background-color: lightblue;
+        padding: 20px;
+      }
+
+      nav {
+        background-color: lightgreen;
+        padding: 10px;
+        position: relative;
+        left: 30px;
+        /* right: 30px; */
+        top: 30px;
+        /* bottom: 30px; */
+      }
+
+      aside,
+      section,
+      article {
+        float: left;
+        padding: 20px;
+        /* border: 2px solid red; */
+        /* height: 640px; */
+        height: calc(100vh - 154px);
+        /* 100vh -> view height */
+        /* 100vw -> view width */
+        width: calc(100% / 3);
+      }
+
+      aside {
+        /* width: 20%; */
+        /* 33.33% */
+        background-color: lightseagreen;
+      }
+
+      section {
+        /* width: 60%; */
+        background-color: lightpink;
+      }
+
+      article {
+        /* width: 20%; */
+        background-color: lightslategray;
+      }
+
+      footer {
+        background-color: grey;
+        padding: 20px;
+        clear: both;
+      }
+
+      @media screen and (max-width: 600px) {
+        article,
+        section,
+        aside {
+          width: 100%;
+          height: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Semantic HTML -->
+    <!-- <nav></nav> -->
+    <!-- <footer></footer> -->
+    <!-- Float -->
+    <!-- inline -->
+    <!-- inline-block -->
+    <!-- Positions -->
+    <!-- Flexbox -->
+    <!-- Grid -->
+    <!-- z-index -->
+
+    <!-- CSS Layout  - position  property -->
+    <!-- position: static -->
+    <!-- position: relative -->
+    <!-- position: sticky -->
+    <header>Header</header>
+    <nav>Navbar</nav>
+    <main>
+      <aside>Aside</aside>
+      <section>Section</section>
+      <article>Article</article>
+    </main>
+    <footer>Footer</footer>
+  </body>
+</html>
